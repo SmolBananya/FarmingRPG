@@ -52,7 +52,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: 76b67f58cf2a792438dacf663689a3c0, type: 3}
     - {fileID: 102900000, guid: 0192443a29c27e747a3eb28596eddb21, type: 3}
     - {fileID: 102900000, guid: 15ae8b62ae9660f4f87a9f2d47eacc97, type: 3}
-    totalSpriteSurfaceArea: 338750
+    totalSpriteSurfaceArea: 332094
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -188,13 +188,6 @@ SpriteAtlas:
   - {fileID: 8727980769644376175, guid: b8a1ee46b6ce11a4d8368beea7dd0051, type: 3}
   - {fileID: 21300000, guid: a605f55636af56b47b309a2177079511, type: 3}
   - {fileID: 21300000, guid: 91f65276bc5344c4d947c88a99364d1b, type: 3}
-  - {fileID: 5940278866164146339, guid: d241c496741a12d4290e12ba81dd6724, type: 3}
-  - {fileID: -1611693019923910846, guid: d241c496741a12d4290e12ba81dd6724, type: 3}
-  - {fileID: 1388107105281676754, guid: d241c496741a12d4290e12ba81dd6724, type: 3}
-  - {fileID: 7154603021615155856, guid: d241c496741a12d4290e12ba81dd6724, type: 3}
-  - {fileID: -225264056889025803, guid: d241c496741a12d4290e12ba81dd6724, type: 3}
-  - {fileID: 6019493940114240039, guid: d241c496741a12d4290e12ba81dd6724, type: 3}
-  - {fileID: 4789355601316357596, guid: d241c496741a12d4290e12ba81dd6724, type: 3}
   - {fileID: 21300000, guid: e26dc0d638731ec47abe9c4b3cae62ac, type: 3}
   - {fileID: 21300000, guid: 2e92a61802edadc4495e4d901e3a97cb, type: 3}
   - {fileID: 21300000, guid: 37e09848a493a0a4b89a743f73f75963, type: 3}
@@ -1022,13 +1015,6 @@ SpriteAtlas:
   - Farmhouse1_24
   - RedGridCursor
   - CollisionTile
-  - CanyonOak_6
-  - CanyonOak_5
-  - CanyonOak_4
-  - CanyonOak_3
-  - CanyonOak_2
-  - CanyonOak_1
-  - CanyonOak_0
   - Wood
   - GreenGridCursor
   - Cactus1
