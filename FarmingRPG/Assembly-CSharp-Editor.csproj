@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Packages\Starter Assets\Tilemap\Custom Brush Scripts\Coordinate Brush\Editor\CoordinateBrush.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Property Drawers\Editor\ItemCodeDescriptionDrawer.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Users/Brain/Files/Unity/Projects/FarmingRPG/FarmingRPG/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>

@@ -39,7 +39,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 1
     canBeCarried: 1
-  - itemCode: 1002
+  - itemCode: 10002
     itemType: 0
     itemDescription: Corn
     itemSprite: {fileID: 21300000, guid: 081b5033ea188cb48b5d44b99ab920bc, type: 3}
@@ -298,7 +298,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
-  - itemCode: 0
+  - itemCode: 10023
     itemType: 0
     itemDescription: 
     itemSprite: {fileID: 0}
@@ -406,7 +406,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
-  - itemCode: 10029
+  - itemCode: 10032
     itemType: 9
     itemDescription: Shelf4
     itemSprite: {fileID: 21300000, guid: 83d45440264dc5d41a2711ab2d3314a6, type: 3}
