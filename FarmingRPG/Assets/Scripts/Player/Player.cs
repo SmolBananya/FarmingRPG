@@ -25,6 +25,9 @@ public class Player : SingletonMonobehaviour<Player>
     private bool isPickingDown;
     private bool isPickingLeft;
     private bool isPickingRight;
+
+    private Camera mainCamera;
+
     private ToolEffect toolEffect = ToolEffect.none;
 
     private Rigidbody2D rigidBody2D;
@@ -42,6 +45,9 @@ public class Player : SingletonMonobehaviour<Player>
         base.Awake();
 
         rigidBody2D = GetComponent<Rigidbody2D>();
+
+        // get reference to main camera
+        mainCamera = Camera.main;
     }
 
     private void Update()
@@ -162,7 +168,11 @@ public class Player : SingletonMonobehaviour<Player>
         }
     }
 
-
+    public Vector3 GetPlayerViewportPosition()
+    {
+        // Vector3 viewport position for player ((0,0) viewport bottom left, (1,1) viewport top right
+        return mainCamera.WorldToViewportPoint(transform.position);
+    }
 
 
 
