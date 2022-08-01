@@ -117,6 +117,27 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         //DebugPrintInventoryList(inventoryList);
     }
 
+    ///<summary>
+    ///Swap item at fromItem index with item at toItem index in inventoryLocation inventory list
+    ///</summary>
+    public void SwapInventoryItems(InventoryLocation inventoryLocation, int fromItem, int toItem)
+    {
+        // if fromItem index and toItemIndex are within the bounds of the list, not the same, and greater than or equal to zero
+        if (fromItem < inventoryLists[(int)inventoryLocation].Count && toItem < inventoryLists[(int)inventoryLocation].Count
+             && fromItem != toItem && fromItem >= 0 && toItem >= 0)
+        {
+            InventoryItem fromInventoryItem = inventoryLists[(int)inventoryLocation][fromItem];
+            InventoryItem toInventoryItem = inventoryLists[(int)inventoryLocation][toItem];
+
+            inventoryLists[(int)inventoryLocation][toItem] = fromInventoryItem;
+            inventoryLists[(int)inventoryLocation][fromItem] = toInventoryItem;
+
+            //  Send event that inventory has been updated
+            EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
+        }
+    }
+
+
     /// <summary>
     /// Find if an itemCode is already in the inventory. Returns the item position
     /// in the inventory list, or -1 if the item is not in the inventory
@@ -152,6 +173,46 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         {
             return null;
         }
+    }
+
+    /// <summary>
+    /// Get the item type description for an item type - returns the item type description as a string for a given ItemType
+    /// </summary>
+    public string GetItemTypeDescription(ItemType itemType)
+    {
+        string itemTypeDescription;
+        switch (itemType)
+        {
+            case ItemType.Breaking_tool:
+                itemTypeDescription = Settings.BreakingTool;
+                break;
+
+            case ItemType.Chopping_tool:
+                itemTypeDescription = Settings.ChoppingTool;
+                break;
+
+            case ItemType.Hoeing_tool:
+                itemTypeDescription = Settings.HoeingTool;
+                break;
+
+            case ItemType.Reaping_tool:
+                itemTypeDescription = Settings.ReapingTool;
+                break;
+
+            case ItemType.Watering_tool:
+                itemTypeDescription = Settings.WateringTool;
+                break;
+
+            case ItemType.Collecting_tool:
+                itemTypeDescription = Settings.CollectingTool;
+                break;
+
+            default:
+                itemTypeDescription = itemType.ToString();
+                break;
+        }
+
+        return itemTypeDescription;
     }
 
     /// <summary>
