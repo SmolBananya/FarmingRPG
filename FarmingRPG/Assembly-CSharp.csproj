@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Player\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationTest.cs" />
+    <Compile Include="Assets\Scripts\Scene\SceneControllerManager.cs" />
     <Compile Include="Assets\Scripts\Scene\SwitchConfineBoundingShape.cs" />
     <Compile Include="Assets\Scripts\TimeSystem\GameClock.cs" />
     <Compile Include="Assets\Scripts\TimeSystem\TimeManager.cs" />
